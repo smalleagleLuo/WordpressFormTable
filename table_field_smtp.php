@@ -139,7 +139,7 @@ function push_email($post_ID){
 		$get_post_wechat = $_POST['wechat'];
 	}
 	if($get_post_info->post_status == 'publish' && $_POST['original_post_status'] != 'publish'){
-		$emailAddrs = "438976546@qq.com";
+		$emailAddrs = "xxxxxxxxx@qq.com";//此处填入收件人的邮箱地址
 		$emailTitle = "您有一条来自 [" . get_option("blogname") . "] 网站的表单申请";
 		$emailMassage = '<table cellpadding="0" cellspacing="0" class="email-container" align="center" width="550"
     style="font-size: 15px; font-weight: normal; line-height: 22px; text-align: left; border: 1px solid rgb(177, 213, 245); width: 550px;">
