@@ -7,7 +7,7 @@ Template Name: 申请表单
 <html>
 
 <head>
-    <title>表单 | 麦客CRM</title>
+    <title>表单</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -39,7 +39,7 @@ Template Name: 申请表单
         }
         
         #bg_img {
-            background: url(<?php echo get_template_directory_uri();?>/form-table/158_Bg.png) no-repeat;
+            background: url(<?php echo get_template_directory_uri();?>/form-table/img1.png) no-repeat;
             background-size: cover;
         }
         
@@ -151,16 +151,16 @@ Template Name: 申请表单
 		}
 		
 		.repush{
-			background: url(<?php echo get_template_directory_uri();?>/form-table/err.png) no-repeat center;
+			background: url(<?php echo get_template_directory_uri();?>/form-table/img2.png) no-repeat center;
 		}
 		
 		.success{
-			background: url(<?php echo get_template_directory_uri();?>/form-table/success.png) no-repeat center;
+			background: url(<?php echo get_template_directory_uri();?>/form-table/img3.png) no-repeat center;
 		}
     </style>
     <div id="bg_img"></div>
     <div id="table">
-		<div id="table_img"><img src="<?php echo get_template_directory_uri();?>/form-table/table_img.png"/></div>
+		<div id="table_img"><img src="<?php echo get_template_directory_uri();?>/form-table/img4.png"/></div>
         <form action="" method="post" id="form_table_s">
             <table>
                 <tbody>
