@@ -205,7 +205,7 @@ Template Name: 申请表单
     </div>
     <script>
 	var status = 0;
-		//栏目检验
+	//栏目检验
         function checkPhone() {
             var num = document.getElementById('number');
             var c_num = document.getElementById('check_number');
