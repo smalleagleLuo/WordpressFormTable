@@ -30,7 +30,7 @@ Template Name: 申请表单
             padding: 20px 0;
         }
         
-		#bg_img {
+	#bg_img {
             position: fixed;
             left: 0;
             right: 0;
@@ -108,7 +108,7 @@ Template Name: 申请表单
             cursor: pointer
         }
         
-		.text input {
+	.text input {
             padding: 8px;
             border: 1px solid #d3d3d3;
             width: 100%;
@@ -123,7 +123,7 @@ Template Name: 申请表单
             text-align: center;
             margin: 25px;
             margin-top: 0;
-			font-size: 18px;
+            font-size: 18px;
         }
         
         #submit-div input,.hidden input {
@@ -135,32 +135,32 @@ Template Name: 申请表单
             border-radius: 5px;
         }
 		
-		.hidden{
-			display:none;
-			padding:60px 30px;
-			text-align:center;
-		}
-		.hidden p{
-			padding:30px;
-			font-size:18px;
-		}
-		
-		.repush,.success{
-			height:157px;
-			margin-bottom:16px;
-		}
-		
-		.repush{
-			background: url(<?php echo get_template_directory_uri();?>/form-table/img2.png) no-repeat center;
-		}
-		
-		.success{
-			background: url(<?php echo get_template_directory_uri();?>/form-table/img3.png) no-repeat center;
-		}
+	.hidden{
+            display:none;
+            padding:60px 30px;
+            text-align:center;
+	}
+	.hidden p{
+            padding:30px;
+            font-size:18px;
+	}
+
+	.repush,.success{
+            height:157px;
+            margin-bottom:16px;
+	}
+
+	.repush{
+            background: url(<?php echo get_template_directory_uri();?>/form-table/img2.png) no-repeat center;
+	}
+
+	.success{
+            background: url(<?php echo get_template_directory_uri();?>/form-table/img3.png) no-repeat center;
+	}
     </style>
     <div id="bg_img"></div>
     <div id="table">
-		<div id="table_img"><img src="<?php echo get_template_directory_uri();?>/form-table/img4.png"/></div>
+	<div id="table_img"><img src="<?php echo get_template_directory_uri();?>/form-table/img4.png"/></div>
         <form action="" method="post" id="form_table_s">
             <table>
                 <tbody>
@@ -174,8 +174,8 @@ Template Name: 申请表单
                     <tr style="padding-top:0;">
                         <td class="tenpercent"><span class="bold">姓名</span> *</td>
                         <td class="ninepercent text"><input id="username" type="text" name="username" required value="">
-							<span id="check_name" style="color:red;position:absolute;display:none;">请输入姓名</span>
-						</td>
+                            <span id="check_name" style="color:red;position:absolute;display:none;">请输入姓名</span>
+			</td>
                     </tr>
                     <tr>
                         <td class="tenpercent"><span class="bold">手机</span> *</td>
@@ -193,59 +193,59 @@ Template Name: 申请表单
                 <input type="submit" onclick="return check_submit()" id="submit_go" value="确认提交">
             </div>
         </form>
-		<div class="hidden succe">
-			<div class="success"></div>
-			<p>表单提交成功！客服将会在工作时间内与您取得联系，请保持电话畅通！</p>
-		</div>
-		<div class="hidden error">
-			<div class="repush"></div>
-			<p>请勿重复提交！客服将会在工作时间内与您取得联系，请保持电话畅通！</p>
-			<input type="submit" onclick="go_home();" id="submit_go" value="返回首页">
-		</div>
+	<div class="hidden succe">
+            <div class="success"></div>
+            <p>表单提交成功！客服将会在工作时间内与您取得联系，请保持电话畅通！</p>
+	</div>
+	<div class="hidden error">
+            <div class="repush"></div>
+            <p>请勿重复提交！客服将会在工作时间内与您取得联系，请保持电话畅通！</p>
+            <input type="submit" onclick="go_home();" id="submit_go" value="返回首页">
+	</div>
     </div>
     <script>
-		var status = 0;
+	var status = 0;
 		//栏目检验
         function checkPhone() {
-			var num = document.getElementById('number');
-			var c_num = document.getElementById('check_number');
-			var c_num_right = checknumber(num.value);
-			status = checkName();
+            var num = document.getElementById('number');
+            var c_num = document.getElementById('check_number');
+            var c_num_right = checknumber(num.value);
+            status = checkName();
             if (!num.value) {
-				c_num.style.display = '';alert("请输入正确的信息！");
+		c_num.style.display = '';alert("请输入正确的信息！");
                 return false;
             } else {
                 if (c_num_right) {
-					c_num.style.display = 'none';
-					if(status == 1){return true;}
-					else{alert("请输入正确的信息！");return false;}
+                    c_num.style.display = 'none';
+                    if(status == 1){return true;}
+                    else{alert("请输入正确的信息！");return false;}
                 } 
-				else {
-					c_num.style.display = '';alert("请输入正确的信息！");
+		else {
+                    c_num.style.display = '';alert("请输入正确的信息！");
                     return false;
-				}
+		}
             }
         }
-		//检验手机号
-		function checknumber(numvalue){
-			let reg = /^(1[3-9][0-9])\d{8}$/;
-			return reg.test(numvalue);
-		}
-		//检验姓名栏
-		function checkName(){
-			var name = document.getElementById('username');
-			var c_name = document.getElementById('check_name');
-			if (!name.value) {
-				c_name.style.display = '';
-				status = 0;
+	//检验手机号
+	function checknumber(numvalue){
+            let reg = /^(1[3-9][0-9])\d{8}$/;
+            return reg.test(numvalue);
+	}
+	//检验姓名栏
+	function checkName(){
+            var name = document.getElementById('username');
+            var c_name = document.getElementById('check_name');
+            if (!name.value) {
+		c_name.style.display = '';
+		status = 0;
             }
-			else{
-				c_name.style.display = 'none';
-				status = 1;
-			}
-			return status;
-		}
-		//提交事件
+            else{
+		c_name.style.display = 'none';
+		status = 1;
+            }
+            return status;
+	}
+	//提交事件
         function check_submit() {
             var submit = document.getElementById('submit_go');
             if (!checkPhone()) {return false;}
