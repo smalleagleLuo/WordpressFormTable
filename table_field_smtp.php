@@ -160,8 +160,8 @@ function push_email($post_ID){
                                 <p style="background: #eee;padding: 1em;text-indent: 2em;line-height: 30px;">'.$get_post_number.'</p>
                                 <p>微信:</p>
                                 <p style="background: #eee;padding: 1em;text-indent: 2em;line-height: 30px;">'.$get_post_wechat.'</p>
-								<p>时间:</p>
-								<p style="background: #eee;padding: 1em;text-indent: 2em;line-height: 30px;">'.$get_post_info->post_date.'</p>
+				<p>时间:</p>
+				<p style="background: #eee;padding: 1em;text-indent: 2em;line-height: 30px;">'.$get_post_info->post_date.'</p>
                             </td>
                         </tr>
                     </tbody>
