@@ -224,8 +224,8 @@ function ssid_column() {
 }
 function ssid_value($column_name, $id) {
 	$value = get_post_meta($id,'_customer_info',true);
-	if($column_name == 'ssid')	echo $id;
-	if($column_name == 'type')	echo $value['type'];
+	if($column_name == 'ssid') echo $id;
+	if($column_name == 'type') echo $value['type'];
 	if($column_name == 'number') echo $value['number'];
 	if($column_name == 'wechat') echo $value['wechat'];
 }
